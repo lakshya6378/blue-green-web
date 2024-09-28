@@ -10,7 +10,7 @@ const Features = () => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Why Choose Us?"
+          title="What We Offer?"
         />
 
         <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">

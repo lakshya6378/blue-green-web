@@ -378,9 +378,32 @@ export const socials = [
 ];
 
 export const webintroduction = {
-  heading:
-    "Deploy any service, anytime, with minimal efforts just @799. Leave the hassle of managing infra and focus on code.",
+  heading: "Code your best We'll handle the rest.",
   description: "loremepsum text",
   subheading:
     "Comprehensive cloud and infrastructure solutions for startups. We handle all your cloud, DevOps, and infrastructure needs, letting you concentrate on what matters most—building your business.",
 };
+
+export const testimonials = [
+  {
+    id: 1,
+    text: "This service has been a game-changer for my business. The team provided expert support and guidance that helped us scale quickly and efficiently.",
+    name: "David Chen",
+    title: "Engineer",
+    imageUrl: "https://via.placeholder.com/150", // Replace with actual image link
+  },
+  {
+    id: 2,
+    text: "Their cloud and DevOps support allowed us to focus on our core business while they handled all infrastructure needs seamlessly.",
+    name: "Sarah Johnson",
+    title: "CTO",
+    imageUrl: "https://via.placeholder.com/150", // Replace with actual image link
+  },
+  {
+    id: 3,
+    text: "I highly recommend this team for any startup looking to optimize their cloud infrastructure and streamline operations.",
+    name: "Michael Smith",
+    title: "Founder",
+    imageUrl: "https://via.placeholder.com/150", // Replace with actual image link
+  },
+];
