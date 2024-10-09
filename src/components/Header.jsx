@@ -7,7 +7,7 @@ import MenuSvg from '../assets/svg/MenuSvg';
 import {HamburgerMenu} from './design/Header';
 import { enablePageScroll,disablePageScroll } from 'scroll-lock';
 
-const Header = () => {
+const Header = ({triggerfunction}) => {
   const pathname=useLocation();
   const [openNavigation, setopenNavigation] = useState(false);
   const toggleNavigation=()=>{
@@ -72,7 +72,10 @@ const Header = () => {
         >
           New Account
         </a> */}
-        <Button className="hidden lg:flex" href="#login">
+        <Button
+          className="hidden lg:flex"
+          onClick={() => {triggerfunction(true); disablePageScroll()}}
+        >
           Contact us
         </Button>
         <Button

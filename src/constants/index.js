@@ -39,41 +39,42 @@ import {
   card4,
   card3,
   card2,
-  card6
+  card6,
+  serverless,
+  sourceControl,
+  MySql,
+  mongodb,
+  redis,
+  cloudStorage,
+  ssl,
+  domain
 } from "../assets";
 
 export const navigation = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "Home",
+    url: "#hero",
   },
   {
     id: "1",
+    title: "About Us",
+    url: "#Aboutus",
+  },
+  {
+    id: "2",
     title: "Pricing",
     url: "#pricing",
   },
   {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "Docs",
+    url: "#Docs",
   },
   {
     id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
+    title: "Support",
+    url: "#Support",
   },
 ];
 
@@ -83,74 +84,41 @@ export const notificationImages = [notification4, notification3, notification2];
 
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
-export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
-];
 
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-];
-
-export const roadmap = [
-  {
-    id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap1,
-    colorful: true,
-  },
-  {
-    id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap2,
-  },
-  {
-    id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap3,
-  },
-  {
-    id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap4,
-  },
-];
 
 export const collabText =
   "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
 
-export const  collabContent = [
+export const collabContent = [
   {
     id: "0",
-    title: "Deployment Support",
-    text: "Get full support for deploying your applications with minimal downtime and optimal performance, ensuring seamless service delivery.",
+    title: "All-in-One Cloud Solutions",
+    text: "We provide end-to-end cloud services, eliminating the need to juggle multiple vendors. Simplify your operations with our seamless, unified solutions.",
   },
   {
     id: "1",
-    title: "Dedicated DevOps Support",
-    text: "Our team of DevOps experts works closely with you to manage and optimize your infrastructure, streamlining your development and operations processes.",
+    title: "Zero Infrastructure Hassles",
+    text: "Focus on innovation while we handle the infrastructure. No more maintenance headaches or downtime worries—just smooth operations every step of the way.",
   },
   {
     id: "2",
-    title: "Bring Your Own Cloud",
-    text: "Leverage your existing cloud infrastructure with our flexible services, allowing you to bring your preferred cloud provider while we manage the deployment and scaling.",
+    title: "24/7 DevOps Assistance",
+    text: "Get expert DevOps support around the clock. We ensure your services run smoothly with proactive monitoring and swift issue resolution.",
+  },
+  {
+    id: "3",
+    title: "Quick & Easy Onboarding",
+    text: "Launch your projects faster with our intuitive setup process. No steep learning curve—just a smooth start to your cloud journey.",
+  },
+  {
+    id: "4",
+    title: "Built for Scalability",
+    text: "Scale effortlessly as your business grows. Our cloud solutions adapt to your needs, ensuring high performance, even during peak demand.",
+  },
+  {
+    id: "5",
+    title: "Seamless Migration",
+    text: "Easily migrate from your current setup to our cloud platform with minimal disruption, ensuring a smooth transition without downtime.",
   },
 ];
 
@@ -216,130 +184,151 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
+    title: "LaunchPad ",
+    description:
+      "Perfect for startups and testing environments get started quickly with minimal resources and full flexibility.",
+    price: "27",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Ideal for Dev and QA Environments",
+      "Streamlined Infrastructure Setup Saves Developer Time",
+      "Simply Git Push to Launch Your Service Instantly",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Skyline",
+    description:
+      "Scale your business to new heights with robust, enterprise-grade microservice deployments tailored for growing needs.",
+    price: "400",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Round-the-Clock DevOps Support",
+      "99.9% SLA Guarantee for Reliability",
+      "Infinitely Scalable Solutions for Growing Needs",
     ],
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
+    title: "Cloud Commander",
+    description:
+      "Retain full control over your cloud infrastructure with our BYOC (Bring your own cloud) solution, empowering you to command your own cloud ecosystem.",
     price: null,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Comprehensive Cloud Management for You",
+      "Enhanced Performance Optimizations Tailored to Your Needs",
+      "Effective Cost Optimizations to Maximize Savings",
+      "Disaster-Resilient Systems for Uninterrupted Operations"
     ],
   },
 ];
 
+export const comparetable=[
+  
+]
+
+export const discountpercentage=17.5;
+
 export const benefits = [
   {
     id: "0",
-    title: "Source Control Repository",
-    text: "Efficiently manage your source code with a reliable and secure version control system, enabling seamless collaboration and tracking.",
+    title: "Serverless Deployments",
+    text: " Effortlessly deploy and scale applications without managing infrastructure, optimizing performance and reducing costs with serverless architecture.",
     backgroundUrl: card1,
-    iconUrl: benefitIcon1,
+    iconUrl: "fa-brands fa-git-alt",
+    bgcolor: "#3acfff",
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Infrastructure for Deploying Services",
-    text: "Deploy your services effortlessly with our robust infrastructure, designed to handle scalable deployments with ease.",
+    title: "Source Control Repository",
+    text: "Securely manage your code with integrated version control, enabling collaboration, automated workflows, and continuous delivery.",
     backgroundUrl: card2,
-    iconUrl: benefitIcon2,
+    iconUrl: "fa-brands fa-git-alt",
     imageUrl: benefitImage2,
+    bgcolor: "#ffca7b",
     light: true,
   },
   {
     id: "2",
-    title: "Monitoring and Logging",
-    text: "Keep track of your application's performance and logs in real-time to ensure continuous operation and resolve issues swiftly.",
+    title: "SQL Databases",
+    text: "Scalable, managed MySQL and Postgres databases with automatic backups, high availability, and strong security for reliable data management.",
     backgroundUrl: card3,
-    iconUrl: benefitIcon3,
+    iconUrl: "fa-solid fa-database",
+    bgcolor: "#d986ee",
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "User Management",
-    text: "Manage user roles, permissions, and access seamlessly, ensuring security and scalability for your application.",
+    title: "MongoDB",
+    text: "Easily manage unstructured data with MongoDB, offering high performance, scalability, and flexibility for modern applications.",
     backgroundUrl: card4,
-    iconUrl: benefitIcon4,
+    iconUrl: "fa-regular fa-file-code",
     imageUrl: benefitImage2,
+    bgcolor: "#b9ef81",
     light: true,
   },
   {
     id: "4",
-    title: "Uptime Checks and Alerts",
-    text: "Monitor your service uptime with automated checks and receive instant alerts to minimize downtime and ensure reliability.",
+    title: "Redis",
+    text: "Supercharge your application’s performance with Redis, providing lightning-fast caching and real-time data processing.",
     backgroundUrl: card5,
-    iconUrl: benefitIcon1,
+    iconUrl: "fa-solid fa-server",
+    bgcolor: " #ef9480",
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Application Performance Monitoring (APM)",
-    text: "Track key performance metrics to optimize the performance of your application and troubleshoot issues efficiently.",
+    title: "Object Storage",
+    text: "Secure and scalable object storage for unstructured data, ideal for backups, media files, and large datasets.",
     backgroundUrl: card6,
-    iconUrl: benefitIcon2,
+    iconUrl: "fa-solid fa-file",
+    bgcolor: "#8198ef",
     imageUrl: benefitImage2,
   },
   {
     id: "6",
-    title: "Blob Storage",
-    text: "Store and manage large amounts of unstructured data securely with our reliable blob storage solution.",
+    title: "Observability",
+    text: "Gain deep insights into your infrastructure and applications with real-time monitoring, logging, and analytics for proactive management.",
     backgroundUrl: card1,
-    iconUrl: benefitIcon3,
+    iconUrl: "fa-solid fa-chart-line",
+    bgcolor: "#3acfff",
     imageUrl: benefitImage2,
   },
   {
     id: "7",
-    title: "Databases - PSQL, MySQL, Mongo, Redis",
-    text: "Choose from a range of powerful databases like PostgreSQL, MySQL, MongoDB, and Redis to store and retrieve your data with high efficiency.",
+    title: "Alerting",
+    text: "Stay informed with real-time alerts and uptime checks for critical services, ensuring swift resolution to maintain uptime and performance.",
     backgroundUrl: card2,
-    iconUrl: benefitIcon4,
+    iconUrl: "fa-solid fa-bell",
     imageUrl: benefitImage2,
+    bgcolor: "#ffca7b",
     light: true,
   },
   {
     id: "8",
-    title: "Load Balancing",
-    text: "Ensure high availability and reliability of your services by distributing traffic across multiple servers with our load balancing solutions.",
+    title: "APM",
+    text: "Monitor, optimize, and troubleshoot application performance with detailed metrics, ensuring seamless user experiences.",
     backgroundUrl: card3,
-    iconUrl: benefitIcon1,
+    iconUrl: "fa-solid fa-bug",
+    bgcolor: "#d986ee",
     imageUrl: benefitImage2,
   },
   {
     id: "9",
     title: "SSL Certificates",
-    text: "Secure your website and applications with SSL certificates, providing encryption and building trust with your users.",
+    text: "SProtect your website and data with SSL certificates, ensuring secure, encrypted connections for your users.",
     backgroundUrl: card4,
-    iconUrl: benefitIcon2,
+    iconUrl: "fa-brands fa-expeditedssl",
+    bgcolor: "#b9ef81",
     imageUrl: benefitImage2,
     light: true,
   },
   {
     id: "10",
-    title: "Domain Management",
-    text: "Simplify domain management with our solutions, helping you register, configure, and maintain domains for your applications.",
+    title: "Custom Domain",
+    text: "Set up professional, branded custom domains with ease, enhancing your online presence and user trust.",
     backgroundUrl: card5,
-    iconUrl: benefitIcon3,
+    iconUrl: "fa-solid fa-xmarks-lines",
+    bgcolor: "#ef9480",
     imageUrl: benefitImage2,
   },
 ];

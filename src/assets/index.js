@@ -20,7 +20,8 @@ import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
-
+import serverless from "./benefits/Serverless_deployments.svg"
+import sourceControl from "./benefits/source_control_repository.svg"
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
@@ -84,6 +85,13 @@ import card3 from "./benefits/card-3.svg"
 import card4 from "./benefits/card-4.svg"
 import card5 from "./benefits/card-5.svg"
 import card6 from "./benefits/card-6.svg"
+import MySql from "./benefits/Antu_mysql-workbench.svg";
+import cloudStorage from "./benefits/cloud_storage.svg";
+import domain from "./benefits/domain.svg";
+import mongodb from "./benefits/mongodb.svg";
+import redis from "./benefits/redis.svg";
+import ssl from "./benefits/ssl.svg"
+
 export {
   brainwave,
   check,
@@ -163,4 +171,12 @@ export {
   card4,
   card5,
   card6,
+  serverless,
+  sourceControl,
+  cloudStorage,
+  ssl,
+  redis,
+  mongodb,
+  domain,
+  MySql
 };
