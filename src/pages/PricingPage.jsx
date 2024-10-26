@@ -6,6 +6,7 @@ import PricingList from "../components/PricingList";
 import { LeftLine, RightLine } from "../components/design/Pricing";
 import Section from "../components/Section";
 import CompareList from "../components/CompareList";
+import FrequentQuestions from "../components/FrequentQuestions";
 const PricingPage = () => {
   const [duration, setduration] = useState("monthly");
   return (
@@ -68,6 +69,7 @@ const PricingPage = () => {
         </div>
       </Section>
       <CompareList/>
+      <FrequentQuestions/>
     </>
   );
 };

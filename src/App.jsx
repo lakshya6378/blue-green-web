@@ -22,6 +22,7 @@ import  Contact from './pages/ContactForm';
 import Docs from "./pages/Docs";
 import Support from "./pages/Support";
 import Pricingpage from "./pages/PricingPage"
+import StateSection from './components/StateSection';
 library.add(fas,fab,far);
 const router = createBrowserRouter([
   {
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
         <Hero />
         <Features />
         <Collaboration />
+        <StateSection/>
         <Pricing />
         <Testimonials />
         <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />

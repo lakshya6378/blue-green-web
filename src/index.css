@@ -21,6 +21,17 @@
     body {
         @apply font-sans bg-n-8 text-n-1 text-base;
     }
+                        .no-scrollbar::-webkit-scrollbar {
+                            display: none;
+                        }
+            
+                        /* Hide scrollbar for IE, Edge and Firefox */
+                        .no-scrollbar {
+                            -ms-overflow-style: none;
+                            /* IE and Edge */
+                            scrollbar-width: none;
+                            /* Firefox */
+                        }
 }
 
 .rotate-45 {

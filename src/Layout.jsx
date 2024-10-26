@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ButtonGradient from "./assets/svg/ButtonGradient";
+import TagDescription from "./components/TagDescription";
 
 const Layout = ({ children, triggerfunction }) => {
   return (
@@ -10,6 +11,7 @@ const Layout = ({ children, triggerfunction }) => {
         <Header triggerfunction={triggerfunction} />
         {children}
         <ButtonGradient />
+        <TagDescription/>
         <Footer />
       </div>
     </>

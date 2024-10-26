@@ -91,7 +91,7 @@ import domain from "./benefits/domain.svg";
 import mongodb from "./benefits/mongodb.svg";
 import redis from "./benefits/redis.svg";
 import ssl from "./benefits/ssl.svg"
-
+import circleHelp from "./circle-help.svg"
 export {
   brainwave,
   check,
@@ -178,5 +178,6 @@ export {
   redis,
   mongodb,
   domain,
-  MySql
+  MySql,
+  circleHelp
 };

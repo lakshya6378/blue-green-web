@@ -221,9 +221,88 @@ export const pricing = [
   },
 ];
 
-export const comparetable=[
-  
-]
+export const pricingComparison = [
+  {
+    id: "0",
+    feature: "24/7 Support",
+    LaunchPad: "No",
+    Skyline: "Yes",
+    CloudCommander: "Yes",
+    tooltip:
+      "Whether round-the-clock customer and technical support is available.",
+  },
+  {
+    id: "2",
+    feature: "Highly Scalable",
+    LaunchPad: "No",
+    Skyline: "Yes",
+    CloudCommander: "Yes",
+    tooltip:
+      "Indicates if the service can scale to handle growing needs without limitations.",
+  },
+  {
+    id: "5",
+    feature: "Custom Domain Support",
+    LaunchPad: "No",
+    Skyline: "Yes",
+    CloudCommander: "Yes",
+    tooltip: "Whether you can use a custom domain with the plan.",
+  },
+  {
+    id: "1",
+    feature: "SLA",
+    LaunchPad: "90%",
+    Skyline: "99.9%",
+    CloudCommander: "99.9%",
+    tooltip:
+      "Service Level Agreement defines guaranteed uptime for the services.",
+  },
+
+  {
+    id: "3",
+    feature: "Deployment Speed",
+    LaunchPad: "Medium",
+    Skyline: "Fast",
+    CloudCommander: "Customizable",
+    tooltip: "The time it takes to deploy applications using the plan.",
+  },
+  {
+    id: "4",
+    feature: "Disaster Recovery",
+    LaunchPad: "Basic",
+    Skyline: "Advanced",
+    CloudCommander: "Custom Recovery Plans",
+    tooltip:
+      "The level of disaster recovery options available to prevent data loss.",
+  },
+
+  {
+    id: "6",
+    feature: "Performance Monitoring",
+    LaunchPad: "Limited",
+    Skyline: "Full Monitoring",
+    CloudCommander: "Tailored Monitoring",
+    tooltip:
+      "The extent of performance monitoring services provided with the plan.",
+  },
+  {
+    id: "7",
+    feature: "Third-Party Integrations",
+    LaunchPad: "Limited",
+    Skyline: "Extensive",
+    CloudCommander: "Fully Customizable",
+    tooltip: "Availability of integration with third-party services and APIs.",
+  },
+  {
+    id: "8",
+    feature: "Data Backup Frequency",
+    LaunchPad: "Weekly",
+    Skyline: "Daily",
+    CloudCommander: "Hourly or Custom",
+    tooltip: "The frequency at which data is backed up for recovery purposes.",
+  },
+];
+
 
 export const discountpercentage=17.5;
 
@@ -394,5 +473,39 @@ export const testimonials = [
     name: "Michael Smith",
     title: "Founder",
     imageUrl: "https://via.placeholder.com/150", // Replace with actual image link
+  },
+];
+
+
+export const faqData = [
+  {
+    id:0,
+    question: "What services do you offer?",
+    answer:
+      "We offer comprehensive cloud and DevOps solutions tailored for startups and enterprises. Our services include cloud infrastructure setup, deployment support, monitoring, disaster recovery, and ongoing maintenance.",
+  },
+  {
+    id:1,
+    question: "Can I use my own cloud provider?",
+    answer:
+      "Yes, with our 'Cloud Commander' plan, you can bring your own cloud (BYOC) and retain full control over your cloud infrastructure, while we handle the optimization and management.",
+  },
+  {
+    id:2,
+    question: "Do you provide 24/7 support?",
+    answer:
+      "Yes, our 'Skyline' and 'Cloud Commander' plans come with round-the-clock support to ensure your systems are running smoothly and any issues are addressed promptly.",
+  },
+  {
+    id:3,
+    question: "What is the difference between the pricing plans?",
+    answer:
+      "We offer three pricing plans: 'LaunchPad' for startups and testing environments, 'Skyline' for scaling businesses, and 'Cloud Commander' for customized, enterprise-level solutions. Each plan is designed to fit different needs and budgets.",
+  },
+  {
+    id:4,
+    question: "How can I get started?",
+    answer:
+      "Getting started is easy! Just reach out to us via our contact form or schedule a consultation. We’ll help assess your needs and recommend the best plan to kickstart your cloud journey.",
   },
 ];
