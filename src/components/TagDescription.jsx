@@ -15,9 +15,9 @@ const TagDescription = () => {
             <p className="body-1 text-2xl max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
               Enjoy full DevOps support at zero extra cost.
             </p>
-            <Button href="/pricing" white>
+            {/* <Button href="/pricing" white>
               Get Started
-            </Button>
+            </Button> */}
           </div>
           <div className="absolute top-1/2 left-1/2 w-[46.5rem] h-[46.5rem] border border-n-2/5 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none">
             <div className="absolute top-1/2 left-1/2 w-[39.25rem] h-[39.25rem] border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>

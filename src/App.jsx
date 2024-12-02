@@ -23,6 +23,7 @@ import Docs from "./pages/Docs";
 import Support from "./pages/Support";
 import Pricingpage from "./pages/PricingPage"
 import StateSection from './components/StateSection';
+import TagDescription from './components/TagDescription';
 library.add(fas,fab,far);
 const router = createBrowserRouter([
   {
@@ -32,11 +33,11 @@ const router = createBrowserRouter([
         <Hero />
         <Features />
         <Collaboration />
-        <StateSection/>
+        <StateSection />
         <Pricing />
-        <Testimonials />
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
-        
+        {/* <Testimonials />
+        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" /> */}
+        <TagDescription />
       </Layout>
     ),
   },
@@ -44,6 +45,7 @@ const router = createBrowserRouter([
     path: "/pricing",
     element: (
       <Layout>
+        <TagDescription />
         <Pricingpage />
       </Layout>
     ),
@@ -53,6 +55,7 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Features />
+        <TagDescription />
       </Layout>
     ),
   },
@@ -61,6 +64,7 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <About />
+        <TagDescription />
       </Layout>
     ),
   },
@@ -69,6 +73,7 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Contact />
+        <TagDescription />
       </Layout>
     ),
   },
@@ -77,6 +82,7 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Docs />
+        <TagDescription />
       </Layout>
     ),
   },
@@ -85,6 +91,7 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Support />
+        <TagDescription />
       </Layout>
     ),
   },

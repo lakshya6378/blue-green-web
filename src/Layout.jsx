@@ -11,7 +11,6 @@ const Layout = ({ children, triggerfunction }) => {
         <Header triggerfunction={triggerfunction} />
         {children}
         <ButtonGradient />
-        <TagDescription/>
         <Footer />
       </div>
     </>

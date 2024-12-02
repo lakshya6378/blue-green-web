@@ -6,7 +6,9 @@ import { circleHelp } from "../assets";
 import { check } from "../assets";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // Basic styling for the tooltip
-import "tippy.js/animations/shift-away.css"; // Tippy.js animation for smooth transitions
+import "tippy.js/animations/shift-away.css";
+import { RxCrossCircled } from "react-icons/rx"; // Tippy.js animation for smooth transitions
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CompareList = () => {
   return (
@@ -66,7 +68,11 @@ const CompareList = () => {
                         style={{ color: "transparent" }}
                       />
                     ) : item.LaunchPad === "No" ? (
-                      ""
+                      <FontAwesomeIcon
+                        icon="fa-solid fa-circle-xmark"
+                        size="xl"
+                        style={{ color: "#FF776F" }}
+                      />
                     ) : (
                       item.LaunchPad
                     )}
@@ -85,7 +91,11 @@ const CompareList = () => {
                         style={{ color: "transparent" }}
                       />
                     ) : item.Skyline === "No" ? (
-                      ""
+                      <FontAwesomeIcon
+                        icon="fa-solid fa-circle-xmark"
+                        size="xl"
+                        style={{ color: "#FF776F" }}
+                      />
                     ) : (
                       item.Skyline
                     )}
@@ -104,7 +114,11 @@ const CompareList = () => {
                         style={{ color: "transparent" }}
                       />
                     ) : item.CloudCommander === "No" ? (
-                      ""
+                      <FontAwesomeIcon
+                        icon="fa-solid fa-circle-xmark"
+                        size="xl"
+                        style={{ color: "#FF776F" }}
+                      />
                     ) : (
                       item.CloudCommander
                     )}

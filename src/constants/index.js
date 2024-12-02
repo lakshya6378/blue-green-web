@@ -51,16 +51,16 @@ import {
 } from "../assets";
 
 export const navigation = [
-  {
-    id: "0",
-    title: "Home",
-    url: "#hero",
-  },
-  {
-    id: "1",
-    title: "About Us",
-    url: "#Aboutus",
-  },
+  // {
+  //   id: "0",
+  //   title: "Home",
+  //   url: "#hero",
+  // },
+  // {
+  //   id: "1",
+  //   title: "About Us",
+  //   url: "#Aboutus",
+  // },
   {
     id: "2",
     title: "Pricing",
@@ -180,6 +180,7 @@ export const collabApps = [
     height: 32,
   },
 ];
+
 
 export const pricing = [
   {
@@ -304,6 +305,49 @@ export const pricingComparison = [
 ];
 
 
+export const connectingservices = [
+  {
+    id: "0",
+    iconUrl: "fa-solid fa-rocket",
+    bgcolor: "#3acfff",
+  },
+  {
+    id: "1",
+    iconUrl: "fa-brands fa-git-alt",
+    bgcolor: "#ffca7b",
+  },
+  {
+    id: "2",
+    iconUrl: "fa-solid fa-database",
+    bgcolor: "#d986ee",
+  },
+  {
+    id: "3",
+    iconUrl: "fa-regular fa-file-code",
+    bgcolor: "#b9ef81",
+  },
+  {
+    id: "4",
+    iconUrl: "fa-solid fa-server",
+    bgcolor: "#ef9480",
+  },
+  {
+    id: "5",
+    iconUrl: "fa-solid fa-file",
+    bgcolor: "#8198ef",
+  },
+  {
+    id: "6",
+    iconUrl: "fa-solid fa-chart-line",
+    bgcolor: "#3acfff",
+  },
+  {
+    id: "7",
+    iconUrl: "fa-solid fa-bell",
+    bgcolor: "#ffca7b",
+  },
+];
+
 export const discountpercentage=17.5;
 
 export const benefits = [
@@ -312,7 +356,7 @@ export const benefits = [
     title: "Serverless Deployments",
     text: " Effortlessly deploy and scale applications without managing infrastructure, optimizing performance and reducing costs with serverless architecture.",
     backgroundUrl: card1,
-    iconUrl: "fa-brands fa-git-alt",
+    iconUrl: "fa-solid fa-rocket",
     bgcolor: "#3acfff",
     imageUrl: benefitImage2,
   },

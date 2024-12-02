@@ -1,17 +1,19 @@
-import { brainwaveSymbol, check } from "../assets";
-import { collabApps, collabContent, collabText } from "../constants";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { brainwaveSymbol, check, mongodb } from "../assets";
+import { collabApps, collabContent, collabText ,connectingservices} from "../constants";
 import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 
+
 const Collaboration = () => {
   return (
     <Section crosses>
       <Heading className="md:max-w-md lg:max-w-2xl" title="Why Choose Us?" />
-      <div className="container lg:flex">
-        <div className="max-w-[25rem]">
-          <ul className="max-w-[22rem] mb-10 md:mb-14 md:m-auto">
+      <div className="container">
+        <div className="">
+          <ul className="grid sm:grid-cols-2 gap-x-10 mb-10 md:mb-14 md:m-auto">
             {collabContent.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
                 <div className="flex items-center">
@@ -24,12 +26,10 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-
-          <Button>Try it now</Button>
         </div>
 
-        <div className="lg:ml-auto xl:w-[38rem] m-auto">
-          <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
+        <div className=" xl:w-[50rem]  flex  gap-x-20 pt-7">
+          <p className="body-1 mb-8 text-n-4 sm:mb-16 lg:mb-32  lg:mx-auto">
             {collabText}
           </p>
 
@@ -48,7 +48,7 @@ const Collaboration = () => {
             </div>
 
             <ul>
-              {collabApps.map((app, index) => (
+              {connectingservices.map((app, index) => (
                 <li
                   key={app.id}
                   className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
@@ -60,13 +60,32 @@ const Collaboration = () => {
                       index * 45
                     }`}
                   >
-                    <img
-                      className="m-auto"
-                      width={app.width}
-                      height={app.height}
-                      alt={app.title}
-                      src={app.icon}
-                    />
+                    <div className="flex items-center mt-auto">
+                      <div
+                        className={`flex items-center justify-center h-[50px] rounded-md  p-0.5 w-[50px]`}
+                        style={{
+                          backgroundColor: `${app.bgcolor}`,
+                        }}
+                      >
+                        {app.id != 3 ? (
+                          <FontAwesomeIcon
+                            stroke=" #63666A"
+                            strokeWidth={"4%"}
+                            icon={`${app.iconUrl} `}
+                            color={"white"}
+                            size="xl"
+                            fill="none"
+                          />
+                        ) : (
+                          <img src={mongodb} alt="mongologo" />
+                        )}
+                      </div>
+
+                      {/* <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                    Explore more
+                  </p>
+                  <Arrow /> */}
+                    </div>
                   </div>
                 </li>
               ))}

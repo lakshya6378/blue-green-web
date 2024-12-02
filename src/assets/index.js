@@ -92,6 +92,7 @@ import mongodb from "./benefits/mongodb.svg";
 import redis from "./benefits/redis.svg";
 import ssl from "./benefits/ssl.svg"
 import circleHelp from "./circle-help.svg"
+import contactbackground from "./background.webp" 
 export {
   brainwave,
   check,
@@ -179,5 +180,6 @@ export {
   mongodb,
   domain,
   MySql,
-  circleHelp
+  circleHelp,
+  contactbackground
 };

@@ -4,11 +4,12 @@ import { smallSphere, stars } from '../assets'
 import Heading from './Heading';
 import PricingList from './PricingList';
 import {LeftLine,RightLine} from '../components/design/Pricing'
+import Button from './Button';
 const Pricing = () => {
   return (
     <Section className="overflow-hidden" id="pricing">
       <div className="container relative z-2">
-        <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
+        {/* <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
           <img
             src={smallSphere}
             className="relative z-1 "
@@ -25,18 +26,18 @@ const Pricing = () => {
               alt="stars"
             />
           </div>
-        </div>
+        </div> */}
         <Heading
-          tag="Affordable Solutions for Every Stage of Your Growth"
+          // tag="Affordable Solutions for Every Stage of Your Growth"
           title="Pay As You Go"
         />
-        <div className='relative '>
-        <PricingList/>
-        <LeftLine/>
-        <RightLine/>
+        <div className="relative ">
+          <PricingList />
+          <LeftLine />
+          <RightLine />
         </div>
-        <div className='flex justify-center mt-10'>
-          <a className='text-xs font-code font-bold tracking-wider uppercase border-b ' href='/pricing'>See the full details</a>
+        <div className="flex justify-center mt-10">
+          <Button href="/pricing">See the full details</Button>
         </div>
       </div>
     </Section>
