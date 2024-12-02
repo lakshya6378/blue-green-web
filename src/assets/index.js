@@ -93,6 +93,8 @@ import redis from "./benefits/redis.svg";
 import ssl from "./benefits/ssl.svg"
 import circleHelp from "./circle-help.svg"
 import contactbackground from "./background.webp" 
+import aboutimage from "./about.webp";
+import featurespageimage from "./features.webp";
 export {
   brainwave,
   check,
@@ -181,5 +183,7 @@ export {
   domain,
   MySql,
   circleHelp,
-  contactbackground
+  contactbackground,
+  aboutimage,
+  featurespageimage
 };

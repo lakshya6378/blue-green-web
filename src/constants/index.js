@@ -51,30 +51,30 @@ import {
 } from "../assets";
 
 export const navigation = [
-  // {
-  //   id: "0",
-  //   title: "Home",
-  //   url: "#hero",
-  // },
+   {
+     id: "0",
+     title: "About",
+     url: "/about",
+   },
   // {
   //   id: "1",
   //   title: "About Us",
   //   url: "#Aboutus",
   // },
   {
-    id: "2",
+    id: "1",
     title: "Pricing",
-    url: "#pricing",
+    url: "/pricing",
+  },
+  {
+    id: "2",
+    title: "Services",
+    url: "/services",
   },
   {
     id: "3",
-    title: "Docs",
-    url: "#Docs",
-  },
-  {
-    id: "4",
-    title: "Support",
-    url: "#Support",
+    title: "Plans",
+    url: "/#pricing",
   },
 ];
 

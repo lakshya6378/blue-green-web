@@ -24,20 +24,15 @@ import Support from "./pages/Support";
 import Pricingpage from "./pages/PricingPage"
 import StateSection from './components/StateSection';
 import TagDescription from './components/TagDescription';
+import Home from './pages/Home';
+import Services from './pages/Services';
 library.add(fas,fab,far);
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <Layout>
-        <Hero />
-        <Features />
-        <Collaboration />
-        <StateSection />
-        <Pricing />
-        {/* <Testimonials />
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" /> */}
-        <TagDescription />
+        <Home />
       </Layout>
     ),
   },
@@ -95,13 +90,20 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
+  {
+    path: "/services",
+    element: (
+      <Layout>
+        <Services />
+        <TagDescription />
+      </Layout>
+    ),
+  },
 ]);
 
 const App = () => {
-  const [showModal, setShowModal] = useState(false);
   return (
     <>
-      {showModal && <ContactForm triggerfunction={setShowModal} />}
       <RouterProvider router={router} />
     </>
   );
