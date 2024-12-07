@@ -75,8 +75,6 @@ import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
-import introimage from "./introimage.jpg"
-import introimage2 from "./introimage2.jpg"
 import cloudai from "./cloudai.jpeg";
 import cloudai2 from "./cloudai2.jpeg";
 import card1 from "./benefits/card-1.svg"
@@ -164,8 +162,6 @@ export {
   instagram,
   telegram,
   twitter,
-  introimage,
-  introimage2,
   cloudai,
   cloudai2,
   card1,
